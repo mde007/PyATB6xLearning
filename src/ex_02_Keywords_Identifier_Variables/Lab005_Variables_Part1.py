@@ -4,8 +4,5 @@ age  = "Pramod"
 pi = 3.14
 name = "Pramod"
 name = "Pramod"
-name = "Pramod"
-name = "Pramod"
-name = "Pramod"
 name = "Dutta"
 print(name)
