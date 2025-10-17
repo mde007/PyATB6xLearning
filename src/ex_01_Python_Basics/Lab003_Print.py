@@ -9,5 +9,5 @@ print("PramodDutta", 123, "Amit", "John", "Vinod", "Roznin", "Ankesh", True, 3.1
 print("PramodDutta", 123, "Amit", "John", "Vinod", "Roznin", "Ankesh", True, 3.145, sep="*", end="\n")
 
 # IndentationError: unexpected indent
-print("PramodDutta", 123, "Amit", "John", "Vinod", "Roznin", "Ankesh", True, 3.145, sep="*", end="!!!")
+print("PramodDutta", 123, "Amit", "John", "Vinod", "Roznin", "Ankesh", True, 3.145, sep="*", end="!!!", flush=True)
 # Print() - Case sensitive
