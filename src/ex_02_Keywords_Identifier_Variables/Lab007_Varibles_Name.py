@@ -5,7 +5,7 @@ pi = 3.14
 name = "Pramod"
 isMale = True
 
-# Type
+# Type function - gives data type of variable
 print(type(_pramod)) # <class 'str'>
 print(type(pi)) # <class 'float'>
 print(type(isMale)) #<class 'bool'>
