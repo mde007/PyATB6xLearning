@@ -10,7 +10,7 @@ num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 
 division = num1 / num2 #True division, Result is always float showing fractional part as well
-quotient = num1 // num2 #Floor division, doesnot return fractional part, only shows quotient
+quotient = num1 // num2 #Floor/Integer division, doesnot return fractional part, only shows quotient
 remainder = num1 % num2
 
 print(division)
