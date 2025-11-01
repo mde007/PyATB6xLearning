@@ -4,4 +4,4 @@
 
 a = float(input("Enter the number: "))
 
-print("The num is greater." if a>100 else "The num is equal to 100." if a==100 else "The num is smaller.")
+print("The num is greater." if (a > 100) else ("The num is equal to 100." if (a == 100) else "The num is smaller."))
