@@ -9,12 +9,14 @@
 num1 = float(input("Enter a number: "))
 num2 = float(input("Enter another number: "))
 
-# if num1 > 0 and num2 > 0:
-#     print("Number should be positive")
-
-if num1 >= num2:
-    print("Maximum", num1)
+if num1 < 0 and num2 < 0:
+    print("Number should be positive")
 else:
-    print("Maximum", num2)
+    if num1 > num2:
+        print("Maximum", num1)
+    elif num1 < num2:
+        print("Maximum", num2)
+    else:
+        print("Both are same")
 
 # num1 == num2 ->  Handled.

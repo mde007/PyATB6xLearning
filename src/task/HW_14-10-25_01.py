@@ -11,3 +11,4 @@ def cal_area (Base=10.0, Height=5.0):
     print("Area of the triangle: ", a)
 
 cal_area(b, h)
+cal_area()
