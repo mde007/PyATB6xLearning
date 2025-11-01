@@ -19,16 +19,18 @@ score = int(input("Enter the score: ").strip())
 if score > 100 or score <= -1:
     print("❌ You are  Superman!!, you can't get a grade!! :)")
 else:
-    if score >= 90 and score <= 100:
+    if score == 100:
+        print("A perfect score!!! Your grade is A")
+    elif 90 <= score <= 99:
         print("Your grade is A")
-    elif score >= 80 and score <= 89:
+    elif 80 <= score <= 89:
         print("Your grade is B")
-    elif score >= 70 and score <= 79:
+    elif 70 <= score <= 79:
         print("Your grade is C")
-    elif score >= 60 and score <= 69:
+    elif 60 <= score <= 69:
         print("Your grade is D")
     else:
         print("Your grade is F")
 
 
-# float, python_dir - try catch.
+# float, abc, python_dir - to be handled using try catch.
