@@ -1,14 +1,7 @@
-"""
-Given a number you need to calculate the factorial of that number
+# Skip numbers divisible by 3, from (0,100)
 
-n = 5
-Fact = 5×4×3*2*1 = 120
-Fact = 0 → 1,
-"""
-
-a = int(input("Enter a number: "))
-
-fact = 1
+a = int(input("Enter the number: "))
+fact=1
 
 if a==0:
     print(f"Factorial of {a}: 1")
