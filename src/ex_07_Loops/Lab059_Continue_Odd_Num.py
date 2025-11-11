@@ -4,6 +4,6 @@
 
 for number in range(10):
     if number % 2 == 0:
-        continue
+        continue #go to next
     else:
         print(number)

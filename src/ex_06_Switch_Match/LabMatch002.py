@@ -1,5 +1,4 @@
-print("Enter the which Test you want to run")
-test_type  = input("Enter the Test Type : API, UI, Performance, Security ")
+test_type  = input("Enter the Test Type you want to run : API, UI, Performance, Security ").upper()
 
 match test_type:
     case "API":
