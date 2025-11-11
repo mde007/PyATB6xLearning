@@ -1,14 +1,9 @@
 # Skip numbers divisible by 3, from (0,100)
 
-a = int(input("Enter the number: "))
-fact=1
+print("List of numbers between 0 and 100 and not divisible by 3:")
 
-if a==0:
-    print(f"Factorial of {a}: 1")
-elif a<0:
-    print("Factorial is only defined for non-negative integers.")
-else:
-    for i in range(1, a+1):
-        fact = fact*i
-    print(f"The factorial of {a} using a loop is: ",fact)
-
+for i in range(101):
+    if i % 3 == 0:
+        continue
+    else:
+        print(i)
