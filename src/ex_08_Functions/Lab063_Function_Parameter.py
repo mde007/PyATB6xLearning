@@ -1,6 +1,7 @@
+# Type 2 - Function with parameter and no return type
+
 def greet(name):
     print("Hi,", name)
-
 
 greet("Pramod")
 greet("Amit")
