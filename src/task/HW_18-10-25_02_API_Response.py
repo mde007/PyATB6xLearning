@@ -10,17 +10,17 @@ Attempt 2: Response 200
 """
 import random
 
-api = 0 # Initialization
+attempt = 0 # Initialization
 val = ["Response 200", "Response 404", "Response 503"]
-while api < 3: # Condition
+while attempt < 3: # Condition
     code = random.choice(val)
     if code == "Response 200":
         print(f"{code}: The request was successful !!!")
         break
     else:
-        api += 1 #Updation
+        attempt += 1 #Updation
         print(f"{code}: Retry!")
 
-if api==3:
+if attempt==3:
     print("❌ Failed API Request after 3 attempts !!!")
 

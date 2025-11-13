@@ -1,7 +1,7 @@
 def print_mul_arg(*pramod_list):
-    # args - List
+    # pramod_list - List
     for i in pramod_list:
-        print(i)
+        print(i, end=' ')
 
 
 print_mul_arg("pramod")

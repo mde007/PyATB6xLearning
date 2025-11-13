@@ -5,6 +5,6 @@ def my_function():
     print(pb_a)
     print(pb_global_b)
 
-# print(pb_a)
+# print(pb_a) - local var cant be accessed outside
 print(pb_global_b)
 my_function()
