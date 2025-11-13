@@ -19,5 +19,6 @@ def check_status(status_code):
         case _:  # default case is mentioned at last
             print("UNKNOWN")
 
+
 code= int(input("Enter the test case status code: "))
 check_status(code)
