@@ -15,7 +15,10 @@ s1 = int(input("Enter length of the first side of a triangle: "))
 s2 = int(input("Enter length of the second side of a triangle: "))
 s3 = int(input("Enter length of the third side of a triangle: "))
 
-if (s1+s2>s3) and (s2+s3>s1) and (s3+s1>s2):
-    triangle_classify(s1, s2, s3)
+if s1>0 and s2>0 and s3>0:
+    if (s1+s2>s3) and (s2+s3>s1) and (s3+s1>s2):
+        triangle_classify(s1, s2, s3)
+    else:
+        print("We cant draw a triangle with given lengths.")
 else:
-    print("We cant draw a triangle with given lengths.")
+    print("Side lengths cant be zero or negative")
