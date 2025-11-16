@@ -1,4 +1,4 @@
-# Write a program to calcuclate even and odd
+# Write a program to calculate even and odd
 # def find_even_odd(num):
 #     if num % 2 == 0:
 #         print("Even")
