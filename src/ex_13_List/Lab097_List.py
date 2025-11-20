@@ -1,13 +1,13 @@
 my_list = [1, 2, 3]
 my_list[0] = "Pramod"
 my_list[1] = "Dutta"
-my_list[1] = "Dutta"
+
 
 for element in my_list:
     print(element)
 
 # range() this also return the list
-for i in range(1, 5):  # 1,2,3,4
+for i in range(1, 5):  #Range is a function which returns list. O/P: 1,2,3,4
     print(i)
 
 
@@ -24,11 +24,11 @@ print(my_list)
 my_list.append(5)
 print(my_list)
 
-# extend() - Append a new list
+# extend() - Append a new list to the end of the existing list
 my_list.extend([7, 8, 10, 9])
 print(my_list)
 
-# insert()
+# insert() - adds a list item at a particular position
 my_list.insert(1,"Dutta")
 print(my_list)
 print(len(my_list))
