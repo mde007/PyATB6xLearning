@@ -1,6 +1,10 @@
 squares = {x ** 2 for x in range(5)}
 print(squares)
 
+my_set = {"MD","TD"}
+my_set.update({"LD"})
+print(my_set)
+
 # Frozen Set (Immutable Set)
 # A frozenset cannot be changed after creation.
 my_list = [1, 2, 3, 3]

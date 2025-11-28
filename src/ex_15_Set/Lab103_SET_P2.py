@@ -29,11 +29,4 @@ print(my_set)
 my_set = set2.difference(set1)
 print(my_set)
 
-
-
-
-
-
-
-
-
+print(set1 ^ set2)
