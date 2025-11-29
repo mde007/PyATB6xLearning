@@ -3,7 +3,7 @@
 
 def count_strings(list1):
     c=0
-    for elements in my_list:
+    for elements in list1:
         if len(elements) > 1 and elements[0] == elements[-1]:
             c += 1
     return c
