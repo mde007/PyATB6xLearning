@@ -12,3 +12,7 @@ print(my_list[0])
 print(my_list[2])
 # print(my_list[6]) # IndexError: list index out of range
 
+print("Slicing: ",my_list)
+print(my_list[2:3])
+
+
