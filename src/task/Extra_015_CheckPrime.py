@@ -1,21 +1,21 @@
 # Write a Python program to check if a number is a prime number
-"""
 
-n = int(input("Enter the number of fibonacci sequence to be displayed: "))
-a, b = 0, 1
+def check_prime(n):
+    if n <= 1:
+        return False  # Numbers less than or equal to 1 are not prime
 
-if n <= 0:  # Check if n is less than 0
-    print("Enter a valid input")
-elif n == 1:  # Check if n is equal to 1
-    print("Fibonacci series: ", a)
+    # Iterate from 2 up to the square root of the number
+    # We only need to check divisibility up to the square root because if a number
+    # has a factor greater than its square root, it must also have a factor
+    # smaller than its square root.
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False  # If divisible by any number other than 1 and itself, it's not prime
+    return True  # If no divisors found, it's prime
+
+# Example usage:
+num = int(input("Enter a number to check: "))
+if check_prime(num):
+    print(f"{num} is a prime number.")
 else:
-    print("Fibonacci series: ")
-    print(a, end=" ") # print first term
-    print(b, end=" ")  # print second term
-    for i in range(3, n + 1): # print subsequent terms
-        c = a + b
-        print(c, end=" ")
-        a = b
-        b = c
-
-"""
+    print(f"{num} is not a prime number.")
