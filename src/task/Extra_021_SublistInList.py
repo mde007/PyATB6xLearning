@@ -1,16 +1,23 @@
-# Check for Sublist in List
+# Check for sub_list' is a contiguous sublist of 'main_list'
 
-rows = int(input("Enter number of rows of the ML list: "))
-cols = int(input("Enter number of columns of the ML list: "))
-#line = []
+def sublist_exists(list1, list2):
+    a=0
+    for items in list2:
+        if items in list1:
+            a+=1
+    if a == len(list2):
+        return True
+    else:
+        return False
 
-# multidimensional_list = [[0 for _ in range(cols)] for _ in range(rows)]
-# print(multidimensional_list)
+main_list = ["aa", "bcb", "de", "fgh", "cccc", "setts"]
+#sub_list = []
+#sub_list = ["a", "bb"]
+sub_list = ["de", "setts", "cccc", "fgh"]
 
-multidimensional_list = []
-for i in range(rows):
-    line = []
-    for j in range(cols):
-        line.append(0)
-    multidimensional_list.append(line)
-print("The Multidimensional List formed: ",multidimensional_list)
+if not sub_list:
+    print("Sublist is empty")
+elif not sublist_exists(main_list, sub_list):
+    print("No match")
+else:
+    print("Sublist exists in the list")
