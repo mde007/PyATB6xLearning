@@ -1,16 +1,18 @@
 # Check if two lists are identical.
 
-rows = int(input("Enter number of rows of the ML list: "))
-cols = int(input("Enter number of columns of the ML list: "))
-#line = []
+one_list = ["aa", "bcb", "de", "fgh", "cccc", "setts"]
+#two_list = ["aa", "bcb", "de", "fgh", "cccc", "setts"]
+two_list = ["setts", "yui", "de"]
 
-# multidimensional_list = [[0 for _ in range(cols)] for _ in range(rows)]
-# print(multidimensional_list)
+def common_element(list1, list2):
+    for elements in list1:
+        for items in list2:
+            if elements != items:
+                return False
+            else:
+                return True
 
-multidimensional_list = []
-for i in range(rows):
-    line = []
-    for j in range(cols):
-        line.append(0)
-    multidimensional_list.append(line)
-print("The Multidimensional List formed: ",multidimensional_list)
+if common_element(one_list, two_list):
+    print("Lists are identical")
+else:
+    print("Lists are not identical")

@@ -1,16 +1,20 @@
 # Numbers in a list within a given range
 
-rows = int(input("Enter number of rows of the ML list: "))
-cols = int(input("Enter number of columns of the ML list: "))
-#line = []
+def num_in_list(input_list, a, b):
+    unique_list = []
+    for item in input_list:
+        if a <= item <= b:
+            unique_list.append(item)
+    if not unique_list:
+        print("No items in the range")
+    else:
+        print("The list of items in the given range: ",unique_list)
 
-# multidimensional_list = [[0 for _ in range(cols)] for _ in range(rows)]
-# print(multidimensional_list)
+my_list = [100, 20, 30, 80, 77, 54, 1]
+start_pos = int(input("Enter the start of the range: "))
+end_pos = int(input("Enter the end of the range: "))
 
-multidimensional_list = []
-for i in range(rows):
-    line = []
-    for j in range(cols):
-        line.append(0)
-    multidimensional_list.append(line)
-print("The Multidimensional List formed: ",multidimensional_list)
+if start_pos <= end_pos:
+    num_in_list(my_list, start_pos, end_pos)
+else:
+    print("Start position should be less than equal to end position. Please retry!")
