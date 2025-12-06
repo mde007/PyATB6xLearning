@@ -6,20 +6,12 @@
 # Forward: "hello", Backward: "olleh"
 # Not the same → Not a palindrome ❌
 
-input_string = "level"
-# a,e, i,o,u.
-# vowel ?
+def is_palindrome(s):
+    #s = s.lower()
+    return s == s[::-1] #s[::-1] creates a reversed copy of the string s
 
-vowels = "aeiou"
-
-vowels_count = 0
-result = list()
-
-for char in input_string:
-    if char in vowels:
-        vowels_count = vowels_count+1
-        result.append(char)
-
-
-print(vowels_count)
-print(result)
+check_str = input("Enter the string: ")
+if not is_palindrome(check_str.lower()):
+    print("Not a palindrome ❌")
+else:
+    print("Palindrome !!!")
