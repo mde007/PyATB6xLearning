@@ -21,3 +21,5 @@ for key, value in my_dict.items():
 
 print("age" in my_dict)
 print("role" in my_dict)
+
+print(my_dict.__contains__("name"))
