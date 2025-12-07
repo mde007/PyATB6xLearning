@@ -5,7 +5,6 @@ class Dog:
     height = None
     weight = None
 
-
     #B
     def bark(self):
         print("Barking")
@@ -19,11 +18,6 @@ print("Outside ?")
 chow  = Dog()
 # Dog() - Object
 # chow -> Object Ref.
-
-
-
-
-
 
 rancho = Dog()
 
