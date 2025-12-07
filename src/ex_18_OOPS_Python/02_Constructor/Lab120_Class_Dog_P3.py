@@ -19,10 +19,9 @@ class Dog:
 
 
 # Object Ref
-chow_ref = Dog()
-mow_ref = Dog()
-
+chow_ref = Dog() #prints "I will be called". Constructor called as soon as object created
 print(chow_ref.name)
+mow_ref = Dog() #prints "I will be called"
 print(mow_ref.name)
 
 # Dog().talk()

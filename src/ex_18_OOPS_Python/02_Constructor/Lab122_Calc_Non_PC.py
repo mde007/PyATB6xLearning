@@ -3,7 +3,10 @@ class Calc:
     b = None
 
     def __init__(self):
-        print("DC")
+        print("DC1")
+
+    def __init__(self): # this will override the previous DC and this will be called during object creation
+            print("DC2")
 
     def sum(self, a, b):
         return a + b
@@ -18,8 +21,8 @@ class Calc:
         return a / b
 
 
-a = float(input("Enter the value of a"))
-b = float(input("Enter the value of b"))
+a = float(input("Enter the value of a: "))
+b = float(input("Enter the value of b: "))
 
 object_ref = Calc()
 

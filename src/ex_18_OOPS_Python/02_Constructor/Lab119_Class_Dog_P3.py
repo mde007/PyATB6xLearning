@@ -6,7 +6,7 @@ class Dog:
     weight = None
     race = None
 
-    def __init__(self, nameGiven, breedGiven):
+    def __init__(self, nameGiven, breedGiven): # used to initialize attribute values
         print("Param C")
         self.name = nameGiven
         self.breed = breedGiven
