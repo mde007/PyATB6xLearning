@@ -2,7 +2,7 @@
 count = 0
 
 def increment():
-    global count #make a variable global within a method
+    global count #make a variable global within a method by typing global keyword
     count = count+1
 
 increment()

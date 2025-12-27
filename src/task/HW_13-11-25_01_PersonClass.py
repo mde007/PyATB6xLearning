@@ -11,6 +11,11 @@ class Person:
 
     def __init__(self):
         print("DC is called")
+        print(self.a)
+        print(self.b)
+        print(self.c)
+        print(self.d)
+        print(self.e)
 
     def func1(self):
         print("Func1")
@@ -29,11 +34,6 @@ class Person:
 
 
 md = Person()
-print(md.a)
-print(md.b)
-print(md.c)
-print(md.d)
-print(md.e)
 md.func1()
 md.func2()
 md.func3()
