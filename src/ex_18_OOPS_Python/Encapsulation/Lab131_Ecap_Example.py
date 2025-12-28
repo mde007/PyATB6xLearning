@@ -12,7 +12,7 @@ class Bank:
 
     def show_me_account_number(self, is_auth):
         if is_auth == True:
-            print(self.__account_number)
+            print(self.__account_number) #variable __account_number encapsulated within a method
         else:
             print("Not Allowed!")
 

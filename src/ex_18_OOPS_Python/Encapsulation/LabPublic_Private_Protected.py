@@ -9,10 +9,10 @@ class TestExample:
         print(f"API Key: {self.__api__key}")
 
     def __private_method1(self):
-        pass
+        print("Private method1")
 
     def __private_method2(self):
-        pass
+        print("Private method2")
 
     def work(self):
         self.__private_method1()
@@ -24,8 +24,6 @@ obj.show()
 obj.work()
 
 # Access levels:
-# print(obj.driver)          # ✅ Public — accessible
-# print(obj._config)         # ⚠️ Protected — accessible but discouraged
+print("Driver",obj.driver)          # ✅ Public — accessible
+print("Config",obj._config)         # ⚠️ Protected — accessible but discouraged
 # print(obj.__api__key)     # ❌ Private — AttributeError
-
-

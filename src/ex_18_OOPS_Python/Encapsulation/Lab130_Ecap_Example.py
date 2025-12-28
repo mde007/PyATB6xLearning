@@ -9,7 +9,7 @@ class Car:
         self.__private_baby = "pass123"
 
     def nany(self):
-        self.__password_yogesh_private = "345"
+        self.__private_baby = "345"
 
 object_ref = Car()
 

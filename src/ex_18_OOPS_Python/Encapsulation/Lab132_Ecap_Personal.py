@@ -1,8 +1,9 @@
 class Home:
     def __init__(self):
+
         self.public_var = "father"
         self._protected_var = "brother"
-        self.__private__var_dadsa__dasda__ = "baby"
+        self.__private_var = "baby"
 
     def mom(self):
         print(self.__private_var)
